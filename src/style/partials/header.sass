@@ -3,9 +3,11 @@
   padding: 8px 0
   .container
     padding: 0
+    max-width: 1145px
+    margin: auto
     .menu
       color: #1E4843
-      font-family: Geometria
+      font-weight: 400
       font-size: 17px
       display: flex
       flex-direction: row
@@ -33,6 +35,11 @@
           max-width: 382px
           a
             color: #1E4843
+            transition: .3s
+            text-decoration: none
+            &:hover
+              color: #009F10
+              text-decoration: underline
         &-right
           display: flex
           flex-direction: row
@@ -41,17 +48,22 @@
           max-width: 154px
           a
             color: #1E4843
-  &-button
-    width: 170px
-    height: 45px
-    display: flex
-    align-items: center
-    justify-content: center
-    background: linear-gradient(92.53deg, #7FE425 -8.94%, #21C11F 97.09%)
-    border-radius: 41px
+            transition: .3s
+            text-decoration: none
+            &:hover
+              color: #009F10
+              text-decoration: underline
+      .button
+        background: linear-gradient(92.53deg,#7fe425 -8.94%,#21c11f 97.09%)
+        border-radius: 41px
+        color: #fff !important
+        padding: 13px 50px
+        font-weight: 600
+        cursor: pointer
+        margin: 0
+        min-width: 0
+        transition: .3s ease-in-out
+        text-decoration: none
+        &:hover
+          text-decoration: underline
 
-    a
-      color: white
-      text-decoration: none
-      text-transform: none
-      font-family: GeometriaBold

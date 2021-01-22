@@ -1,17 +1,31 @@
-.block5
+.home_block5
   position: relative
-  &_bg
-    background-image: url("../img/block5_bg.svg")
-    background-repeat: no-repeat
-    position: absolute
-    top: 0
-    left: 0
+  margin-bottom: 90px
+  .bg1
     width: 100%
     height: 100%
-    z-index: -100
+    top: 15%
+    left: 0
+    position: absolute
+  .bg2
+    width: 100%
+    height: 100%
+    top: 45%
+    left: 0
+    position: absolute
+    z-index: -1
+  .bg3
+    width: 88px
+    height: 88px
+    top: 42%
+    right: 14%
+    position: absolute
+    z-index: -1
   .container
     padding: 220px 0
-  &-slider
+    z-index: 1
+    position: relative
+  .slider
     display: flex
     flex-direction: row
     justify-content: center
@@ -29,7 +43,7 @@
         font-size: 30px
         line-height: 145.7%
         color: #1E4843
-        font-family: GeometriaBold
+        font-weight: 600
         text-align: start
 
     &--cards
@@ -39,27 +53,28 @@
       align-items: center
       &-item
         width: 372px
-        height: 445px
+        min-height: 420px
         padding: 40px
         box-shadow: 0px 21px 35px rgba(115, 177, 168, 0.15)
         border-radius: 10px
-        &-title
+        background: white
+        .title
           font-size: 27px
           line-height: 132.7%
-          font-family: GeometriaBold
+          font-weight: 600
           color: #009F10
           text-align: start
           margin-bottom: 20px
-        &-text
+        .text
           font-size: 17px
           color: #57605F
           line-height: 162.7%
-          font-family: GeometriaLight
+          font-weight: 300
           text-align: start
         &:first-child
           margin-top: 70px
           margin-right: 40px
-        &-author
+        .author
           display: flex
           flex-direction: row
           justify-content: space-between
@@ -72,12 +87,19 @@
               font-size: 18px
               line-height: 132.7%
               color: #1E4843
-              font-family: GeometriaBold
+              font-weight: 600
             &-social
               display: flex
               flex-direction: row
               justify-content: space-between
               max-width: 77px
+              a
+                &:hover
+                  svg
+                    path
+                      fill-opacity: 100%
+                      fill: #99FF1E
+                      transition: 0.5s ease-in-out
           &-avatar
             border-radius: 50%
             border: 3px solid #77E24B
@@ -93,7 +115,7 @@
     margin: auto
     box-shadow: 0px 15px 30px rgba(115, 177, 168, 0.16)
     border-radius: 8px
-    &-block
+    .block
       display: flex
       flex-direction: column
       align-items: center
@@ -101,26 +123,15 @@
       background-image: url(../img/block5_popup_bg.svg)
       background-repeat: no-repeat
       background-position: -40% 75%
-    &-title
+    .title
       font-size: 34px
       line-height: 135.7%
       color: #1E4843
-      font-family: GeometriaBold
-    &-text
+      font-weight: 600
+    .text
       font-size: 18px
-      font-family: GeometriaLight
+      font-weight: 300
       margin: 19px 0 37px
       span
         font-size: 18px
-        font-family: GeometriaRegular
-    &-button
-      background: linear-gradient(92.53deg, #7FE425 -8.94%, #21C11F 97.09%)
-      border-radius: 41px
-      color: white
-      padding: 16px 35px
-      max-width: 241px
-      margin-bottom: 20px
-    &-desc
-      font-size: 13px
-      line-height: 162.7%
-      color: #57605F
+        font-weight: 400

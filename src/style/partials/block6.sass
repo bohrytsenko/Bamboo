@@ -1,16 +1,34 @@
-.block6
+.home_block6
   display: flex
   flex-direction: column
+  position: relative
+  .bg1
+    width: 1054px
+    height: 695px
+    top: 23%
+    right: 0
+    position: absolute
+    z-index: -1
+  .bg2
+    width: 1000px
+    height: 650px
+    bottom: 0
+    right: 0
+    position: absolute
+    z-index: -1
+    background-size: cover
   .container
     display: flex
     flex-direction: column
     padding: 0
+    margin: auto
     max-width: 1145px
+    width: 100%
   &-title
     font-size: 34px
     line-height: 135.7%
     color: #1E4843
-    font-family: GeometriaBold
+    font-weight: 600
     max-width: 682px
     align-self: center
     span
@@ -18,9 +36,9 @@
   &-text
     font-size: 18px
     color: #1E4843
-    font-family: GeometriaLight
+    font-weight: 300
     margin-top: 17px
-  &-cards
+  .cards
     display: flex
     flex-direction: row
     flex-wrap: wrap
@@ -38,25 +56,35 @@
       background-repeat: no-repeat
       min-height: 433px
       margin: 10px
+      transition: .3s ease-in-out
+      a
+        &:hover
+          color: white
+      &:hover
+        cursor: pointer
+        background-image: url("../img/block6_card_hover.svg")
+        a
+          color: white
       &-title
         margin-top: 24px
         font-size: 20px
         line-height: 162.7%
         color: #1E4843
-        font-family: GeometriaBold
+        font-weight: 600
         margin-bottom: 12px
       &-text
         font-size: 17px
         color: rgba(30, 72, 67, 0.8)
         opacity: 80%
-        font-family: GeometriaLight
+        font-weight: 300
         margin-bottom: 74px
         min-height: 107px
       &-button
         font-size: 16px
         line-height: 162.7%
         color: #009F10
-        font-family: GeometriaMedium
+        font-weight: 500
+
   &_start
     display: flex
     flex-direction: column
@@ -68,12 +96,12 @@
     &--title
       font-size: 34px
       color: #1E4843
-      font-family: GeometriaBold
+      font-weight: 600
     &--text
       font-size: 18px
       color: #1E4843
-      font-family: GeometriaLight
-    &--steps
+      font-weight: 300
+    .steps
       display: flex
       flex-direction: row
       justify-content: space-between
@@ -82,11 +110,6 @@
         display: flex
         flex-direction: column
         max-width: 266px
-        &:hover
-          cursor: pointer
-          &--number
-            background: #01B213
-            color: white
         &--image
           position: relative
           width: 277px
@@ -95,53 +118,48 @@
             position: absolute
             top: 0
             left: 0
-        &--number
-          width: 52.54px
-          height: 52.54px
-          border: 3px solid #01B213
-          border-radius: 50%
-          display: flex
-          align-items: center
-          justify-content: center
-          top: 52px
-          position: absolute
-          left: 15px
-          background: white
-          color: #01B213
+          &-number
+            width: 52.54px
+            height: 52.54px
+            border: 3px solid #01B213
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            top: 52px
+            position: absolute
+            left: 15px
+            background: white
+            color: #01B213
+            transition: .3s ease-in-out
+          &:hover
+            cursor: pointer
+            div
+              background: #01B213
+              color: white
         &--text
           color: #1E4843
           font-size: 19px
-          font-family: GeometriaLight
+          font-weight: 300
   &_get
     align-self: start
     display: flex
     flex-direction: column
     align-items: start
     margin-bottom: 204px
-    &--title
+    .title
       font-size: 37px
       line-height: 135.7%
       color: #1E4843
-      font-family: GeometriaBold
+      font-weight: 600
       text-align: start
       margin-bottom: 42px
       span
         color: #009F10
-    &--button
-      color: white
-      font-family: GeometriaBold
-      background: linear-gradient(92.53deg, #7FE425 -8.94%, #21C11F 97.09%)
-      border-radius: 41px
-      width: 241px
-      height: 54px
-      display: flex
-      align-items: center
-      justify-content: center
-      margin-bottom: 25px
-    &--desc
+    .desc
       color: #57605F
       font-size: 13px
-      font-family: GeometriaLight
+      font-weight: 300
 
 
 

@@ -1,19 +1,23 @@
 footer
   background: #1E4843
-
 .footer_block
   display: flex
   flex-direction: row
   justify-content: space-between
   height: 90px
   align-items: center
-
   &-social
     display: flex
     flex-direction: row
     justify-content: space-between
     width: 100%
     max-width: 145px
+    a
+      &:hover
+        svg
+          path
+            fill: #99FF1E
+            transition: 0.5s ease-in-out
   &-menu
     display: flex
     flex-direction: row
@@ -24,9 +28,14 @@ footer
       font-size: 14px
       color: white
       font-family: GeometriaLight
+      transition: .3s
+      &:hover
+        color: #99FF1E
   &-text
     color: white
     font-family: GeometriaLight
     a
       color: #7FE425
       text-decoration: underline
+      &:hover
+        color: white
