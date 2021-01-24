@@ -1,29 +1,32 @@
 .home_block3
+  padding: 70px 0 420px 0
+  @media only screen and (max-width: $r-768 - 1)
+    padding-bottom: 30px
   .left
     position: absolute
     left: 0
     top: 360px
+    z-index: -1
     @media only screen and (max-width: $r-768 - 1)
       position: absolute
-      left: -45px
-      top: 373px
-      max-width: 35%
+      bottom: -150px
+      top: initial
+      max-width: 100px
   .right
     position: absolute
     right: 0
     top: 76px
+    z-index: -1
     @media only screen and (max-width: $r-768 - 1)
       position: absolute
-      right: -122px
-      top: 186px
-      max-width: 122%
+      right: 0
+      top: 50%
+      max-width: 92%
   .img
-    margin-bottom: 420px
     display: flex
     justify-content: center
+    align-items: center
     position: relative
-    @media only screen and (max-width: $r-768 - 1)
-      margin-bottom: 30px
     a
       top: 110px
       position: absolute
@@ -32,14 +35,11 @@
         .play
           max-width: 48%
   .container
-    display: flex
-    flex-direction: column
-    justify-content: center
-    text-align: center
-    p
-      max-width: 700px
-      margin: 20px auto 60px
-    h4
-      color: #1E4843
-      font-size: 18px
-      font-weight: 300
+    .row
+      flex-direction: column
+      text-align: center
+      h2
+        margin-bottom: 20px
+      p
+        max-width: 700px
+        margin: 0 auto 60px auto

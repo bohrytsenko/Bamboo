@@ -1,8 +1,35 @@
 $( document ).ready(function() {
 
-    // Test
+    // Slider testimonials
 
-    console.log('test');
+    var swiper = new Swiper('.slider-testimonials', {
+        slidesPerView: 2,
+        allowTouchMove: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            }
+        },
+    });
+
+    // Slider Cloud
+
+    var swiper = new Swiper('.slider-cloud', {
+        slidesPerView: 1,
+        allowTouchMove: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
 });
 
 

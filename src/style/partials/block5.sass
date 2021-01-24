@@ -1,94 +1,141 @@
 .home_block5
+  padding-top: 90px
   position: relative
   @media only screen and (max-width: $r-768 - 1)
-    margin-bottom: 100px
-  .bg1
-    width: 100%
-    height: 100%
-    top: 15%
+    padding-bottom: 50px
+  .shape
     left: 0
-    position: absolute
-  .bg2
-    width: 100%
-    height: 100%
-    top: 67%
-    left: 0
+    bottom: -200px
     position: absolute
     z-index: -1
-  .bg3
-    max-width: 88px
-    max-height: 88px
-    top: 42%
-    right: 14%
-    position: absolute
-    z-index: -1
-  .slider
+    @media only screen and (max-width: $r-768 - 1)
+      bottom: -50px
+  .arrows
     display: flex
     flex-direction: row
-    justify-content: center
+    justify-content: flex-start
+    position: relative
+    @media only screen and (max-width: $r-768 - 1)
+      display: none
+    .swiper-button-next,
+    .swiper-button-prev
+      position: initial
+      background-image: none
+      margin: 0
+      outline: none
+    .swiper-button-next
+      margin-right: 37px
+  .row
+    justify-content: space-between
     align-items: center
-    &--title
-      display: flex
+    @media only screen and (max-width: $r-768 - 1)
       flex-direction: column
+    .wrapper
+      width: 100%
+      max-width: 330px
+      @media only screen and (max-width: $r-768 - 1)
+        max-width: 100%
+      .arrows
+        @media only screen and (max-width: $r-768 - 1)
+          display: none
       h2
-        max-width: 370px
         text-align: left
-        margin-right: 60px
-      &-arrows
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        max-width: 93px
-        margin-top: 25px
-      &-text
         font-size: 30px
-        line-height: 145.7%
-        color: #1E4843
-        font-weight: 600
-        text-align: start
-    &--cards
+        margin-bottom: 25px
+        @media only screen and (max-width: $r-768 - 1)
+          text-align: center
+          font-size: 26px
+          line-height: 38px
+    .cards
+      width: calc(100% - 330px)
       display: flex
       flex-direction: row
       justify-content: space-between
       align-items: center
-      &-item
-        width: 372px
-        min-height: 420px
-        padding: 40px
-        box-shadow: 0px 21px 35px rgba(115, 177, 168, 0.15)
+      position: relative
+      @media only screen and (max-width: $r-768 - 1)
+        width: 100%
+      &:before,
+      &:after
+        position: absolute
+        content: ''
+        background-repeat: no-repeat
+        background-size: contain
+        width: 80px
+        height: 80px
+        @media only screen and (max-width: $r-768 - 1)
+          display: none
+      &:before
+        left: -30px
+        top: 0
+        background-image: url("../img/block5-quote1.svg")
+        @media only screen and (max-width: $r-992)
+          left: 0
+      &:after
+        right: -30px
+        bottom: 30px
+        background-image: url("../img/block5-quote2.svg")
+        @media only screen and (max-width: $r-992)
+          right: 0
+          bottom: 0
+      .slider-testimonials
+        @media only screen and (max-width: $r-768 - 1)
+          overflow: visible
+          max-width: 345px
+          margin: 0 auto
+        .arrows
+          display: none
+          @media only screen and (max-width: $r-768 - 1)
+            display: flex
+            justify-content: space-between
+            margin-top: 25px
+      .swiper-slide
+        padding: 35px 30px 40px 30px
+        @media only screen and (max-width: $r-768 - 1)
+          padding: 0
+        &:nth-of-type(odd)
+          .item
+            margin-top: 20px
+            @media only screen and (max-width: $r-768 - 1)
+              margin-top: 0
+      .item
+        padding: 40px 45px 35px 45px
+        box-shadow: 0 21px 35px rgba(115, 177, 168, 0.15)
         border-radius: 10px
         background: white
-        .title
+        @media only screen and (max-width: $r-768 - 1)
+          padding: 35px 25px
+        h3
           font-size: 27px
           line-height: 132.7%
           font-weight: 600
           color: #009F10
           text-align: start
           margin-bottom: 20px
-        .text
-          font-size: 17px
+          @media only screen and (max-width: $r-768 - 1)
+            font-size: 24px
+        p
+          text-align: left
           color: #57605F
           line-height: 162.7%
-          font-weight: 300
-          text-align: start
-        &:first-child
-          margin-top: 70px
-          margin-right: 40px
+          @media only screen and (max-width: $r-768 - 1)
+            font-size: 17px
         .author
           display: flex
           flex-direction: row
           justify-content: space-between
           align-items: center
           margin-top: 40px
-          &-left
+          .left
             display: flex
             flex-direction: column
-            &-name
+            .name
               font-size: 18px
               line-height: 132.7%
               color: #1E4843
               font-weight: 600
-            &-social
+              margin-bottom: 7px
+            .social
               display: flex
               flex-direction: row
               justify-content: space-between
@@ -100,11 +147,6 @@
                       fill-opacity: 100%
                       fill: #99FF1E
                       transition: 0.5s ease-in-out
-          &-avatar
-            border-radius: 50%
-            border: 3px solid #77E24B
-            width: 59px
-            height: 59px
-            background-image: url(../img/avatar.png)
-            background-position: center
-            background-size: cover
+          .avatar
+            img
+              height: 60px

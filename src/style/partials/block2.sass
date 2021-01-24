@@ -1,22 +1,23 @@
 .home_block2
-  margin-top: 90px
-  &_cards
+  padding: 70px 0 90px 0
+  @media only screen and (max-width: $r-768 - 1)
+    padding-bottom: 0
+  .wrapper
     display: flex
     flex-direction: row
-    margin-top: 70px
-    margin-bottom: 160px
     justify-content: center
+    margin: 70px 0 0 0
     @media only screen and (max-width: $r-768 - 1)
       flex-direction: column
-      margin-top: 0
-      margin-bottom: 0
+      margin-top: 30px
     .item
       display: flex
       flex-direction: column
+      align-items: center
+      text-align: center
       width: 100%
       max-width: 353px
       padding: 50px 30px 50px
-      align-items: center
       background-position: 500px -200%
       background-repeat: no-repeat
       transition: ease-in-out 0.5s
@@ -24,31 +25,38 @@
         box-shadow: 0 21px 35px rgba(115, 177, 168, 0.15)
         border-radius: 10px
         cursor: pointer
-        background-image: url(../img/block2_card.svg)
+        background-image: url('../img/block2_card.svg')
         background-size: auto
         background-position: 200px -60%
         background-repeat: no-repeat
-      &-img
+      .image
         height: 86px
-        width: 75px
+        width: auto
         margin-bottom: 32px
-      &-text
+      p
         font-size: 17px
         line-height: 162.7%
-        color: #57605F
-        font-family: 'Poppins', sans-serif
         font-weight: 300
+        margin-bottom: 0!important
+        color: #57605F
         @media only screen and (max-width: $r-768 - 1)
-          font-size: 15px
+          font-size: 15px!important
   .container
-    flex-direction: column
-    h2
-      max-width: 615px
-      margin: auto
-    p
-      margin: 14px auto 30px
-    h3
-      font-family: 'Poppins', sans-serif
-      font-weight: 400
-      max-width: 651px
-      margin: auto
+    .row
+      flex-direction: column
+      align-items: center
+      text-align: center
+      h2
+        max-width: 615px
+        margin-bottom: 15px
+      p
+        margin-bottom: 30px
+        @media only screen and (max-width: $r-768 - 1)
+          font-size: 16px
+      h3
+        font-weight: 400
+        max-width: 651px
+        text-align: center
+        margin: auto
+        @media only screen and (max-width: $r-768 - 1)
+          font-size: 16px

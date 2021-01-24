@@ -1,7 +1,9 @@
 .home_block6
   padding: 300px 0
+  @media only screen and (max-width: $r-992)
+    padding: 150px 0
   @media only screen and (max-width: $r-768 - 1)
-    padding: 60px 15px
+    padding: 60px 0
   .bg
     position: absolute
     left: 0
@@ -23,35 +25,37 @@
     max-width: 851px
     min-height: 391px
     margin: auto
-    box-shadow: 0px 15px 30px rgba(115, 177, 168, 0.16)
+    box-shadow: 0 15px 30px rgba(115, 177, 168, 0.16)
     border-radius: 8px
     .block
       display: flex
       flex-direction: column
       align-items: center
+      text-align: center
       padding: 67px 79px 52px
-      background-image: url(../img/block5_popup_bg.svg)
+      background-image: url('../img/block5_popup_bg.svg')
       background-repeat: no-repeat
       background-position: -40% 75%
       @media only screen and (max-width: $r-768 - 1)
         padding: 50px 24px
         background-position: 199% 115%
     h2
-      font-size: 34px
-      line-height: 135.7%
-      color: #1E4843
-      font-weight: 600
-      margin: 0
+      margin-bottom: 20px
       @media only screen and (max-width: $r-768 - 1)
         font-size: 28px
     .text
       font-size: 18px
       font-weight: 300
-      margin: 19px 0 37px
+      margin-bottom: 37px
       @media only screen and (max-width: $r-768 - 1)
         font-size: 16px
+        margin-bottom: 20px
       b
         font-size: 18px
-        font-weight: 400
+        font-weight: 500
         @media only screen and (max-width: $r-768 - 1)
           font-size: 16px
+    .btn-green
+      min-width: 241px
+      height: 54px
+      margin-bottom: 20px

@@ -1,67 +1,76 @@
 footer
   background: #1E4843
+  padding: 20px 0
   @media only screen and (max-width: $r-768 - 1)
-    min-height: 315px
-.footer_block
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-  height: 90px
-  align-items: center
-  width: 100%
-  @media only screen and (max-width: $r-768 - 1)
-    padding: 40px 0 40px
-    flex-direction: column
-    height: 100%
-  &-social
-    display: flex
-    flex-direction: row
+    padding: 40px 0
+  .row
     justify-content: space-between
-    width: 100%
-    max-width: 145px
     align-items: center
-    @media only screen and (max-width: $r-768 - 1)
-      margin-bottom: 10px
-    a
-      &:hover
-        svg
-          path
-            fill: #99FF1E
-            transition: 0.5s ease-in-out
-  &-menu
-    display: flex
-    flex-direction: row
-    justify-content: space-between
+    flex-wrap: wrap
     width: 100%
-    max-width: 430px
     @media only screen and (max-width: $r-768 - 1)
-      flex-wrap: wrap
-      justify-content: center
+      flex-direction: column
+    .socials
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      width: 100%
+      max-width: 145px
       align-items: center
-      padding: 14px 0
-      margin-bottom: 27px
-      border-bottom: 1px solid #325854
-      &-item
-        flex: 33%
-        margin: 10px 0
-    a
-      font-size: 14px
+      @media only screen and (max-width: $r-992)
+        margin-bottom: 10px
+      a
+        &:hover
+          svg
+            path
+              fill: #99FF1E
+              transition: 0.5s ease-in-out
+    .navigation
+      @media only screen and (max-width: $r-992)
+        margin-bottom: 10px
+        width: 100%
+      ul
+        margin: 0
+        padding: 0
+        list-style: none
+        display: flex
+        justify-content: space-between
+        @media only screen and (max-width: $r-768 - 1)
+          width: 100%
+          flex-wrap: wrap
+          justify-content: center
+          align-items: center
+          padding: 14px 0
+          margin-bottom: 27px
+          border-bottom: 1px solid #325854
+        li
+          margin: 0 20px
+          @media only screen and (max-width: $r-768 - 1)
+            margin: 0 0 15px 0
+            width: 33%
+            text-align: center
+          a
+            font-size: 14px
+            color: white
+            font-weight: 300
+            transition: .3s
+            text-decoration: none
+            &:hover
+              transition: 0.3s
+              color: #99FF1E
+    .text
       color: white
       font-weight: 300
-      transition: .3s
       text-decoration: none
-      &:hover
-        color: #99FF1E
-  &-text
-    color: white
-    font-weight: 300
-    text-decoration: none
-    @media only screen and (max-width: $r-768 - 1)
-      font-size: 14px
-      max-width: 240px
-      line-height: 162.7%
-    a
-      color: #7FE425
-      text-decoration: underline
-      &:hover
-        color: white
+      @media only screen and (max-width: $r-768 - 1)
+        font-size: 14px
+        max-width: 240px
+        line-height: 162.7%
+        text-align: center
+      a
+        color: #7FE425
+        transition: 0.3s
+        text-decoration: underline
+        &:hover
+          transition: 0.3s
+          color: white

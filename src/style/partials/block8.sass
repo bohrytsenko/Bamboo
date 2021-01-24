@@ -1,46 +1,42 @@
 .home_block8
-  margin-top: 182px
-  &_start
-    display: flex
+  padding: 90px 0 0 0
+  @media only screen and (max-width: $r-768 - 1)
+    padding: 0
+  .row
     flex-direction: column
     justify-content: center
     align-items: center
-    width: 100%
-    margin-bottom: 160px
+    text-align: center
     p
       @media only screen and (max-width: $r-768 - 1)
         max-width: 255px
     h2
-      margin: 0
-    &--title
-      font-size: 34px
-      color: #1E4843
-      font-weight: 600
-    &--text
-      font-size: 18px
-      color: #1E4843
-      font-weight: 300
-    .steps
-      display: flex
-      flex-direction: row
-      justify-content: space-between
+      margin-bottom: 15px
+    .wrapper
       width: 100%
+      display: flex
+      justify-content: space-between
       @media only screen and (max-width: $r-768 - 1)
         flex-direction: column
         align-items: center
-      &-item
+      .item
         display: flex
         flex-direction: column
         max-width: 277px
-        &--image
+        text-align: center
+        @media only screen and (max-width: $r-992)
+          max-width: 30%
+        @media only screen and (max-width: $r-768 - 1)
+          max-width: 345px
+        .image
           position: relative
-          width: 277px
+          width: auto
           height: 275px
+          @media only screen and (max-width: $r-992)
+            height: auto
           img
-            position: absolute
-            top: 0
-            left: 0
-          &-number
+            height: 100%
+          .number
             width: 52.54px
             height: 52.54px
             border: 3px solid #01B213
@@ -55,12 +51,13 @@
             color: #01B213
             transition: .3s ease-in-out
           &:hover
+            transition: .3s ease-in-out
             cursor: pointer
-            div
-              background: #01B213
+            .number
+              background-color: #01B213
               color: white
-        &--text
-          color: #1E4843
+              filter: drop-shadow(0px 10px 30px rgba(115, 177, 168, 0.6))
+        p
           font-size: 19px
           font-weight: 300
           @media only screen and (max-width: $r-768 - 1)

@@ -1,49 +1,66 @@
+html,
+body
+  position: relative
+  overflow-x: hidden
+
 body
   font-family: 'Poppins', sans-serif
   margin: 0
+
 .container
-  max-width: 1170px
+  max-width: 1200px
   margin: 0 auto
   padding: 0 15px
   @media only screen and (max-width: $r-768 - 1)
     padding: 0 15px
+
+.row
+  display: flex
+
 h1
   color: #1E4843
   font-weight: 600
   font-size: 52px
-p
-  color: #1E4843
-  font-weight: 300
-  text-align: center
-  font-size: 17px
-  @media only screen and (max-width: $r-768 - 1)
-    font-size: 15px
-
-h3
-  font-size: 18px
-  color: #1E4843
-  font-weight: 500
-  @media only screen and (max-width: $r-768 - 1)
-    font-size: 13px
+  margin: 0
 
 h2
   color: #1E4843
   font-size: 34px
+  line-height: 42px
   font-weight: 700
   text-align: center
+  margin: 0
   @media only screen and (max-width: $r-768 - 1)
     font-size: 28px
-  span
+    line-height: 38px
+  b, strong
     color: #009F10
+
+h3
+  font-size: 18px
+  line-height: 162.7%
+  color: #1E4843
+  font-weight: 500
+  margin: 0
+  @media only screen and (max-width: $r-768 - 1)
+    font-size: 13px
+
+h4
+  color: #1E4843
+  font-size: 18px
+  font-weight: 300
+  margin: 0
+
+h6
+  margin: 0
+
 h5
   color: #1E4843
   opacity: 80%
   font-size: 18px
   font-weight: 300
-h4
-  color: #1E4843
-  font-size: 18px
-  font-weight: 300
+  margin: 0
+
 h6, .desc
   color: #57605F
   font-size: 13px
@@ -52,25 +69,30 @@ h6, .desc
   @media only screen and (max-width: $r-768 - 1)
     font-size: 13px
 
+p
+  color: #1E4843
+  font-weight: 300
+  font-size: 17px
+  margin: 0 0 16px 0
+  @media only screen and (max-width: $r-768 - 1)
+    font-size: 15px
+
 .btn-green
+  display: flex
+  align-items: center
+  justify-content: center
   background: linear-gradient(92.53deg, #7FE425 -8.94%, #21C11F 97.09%)
   border-radius: 41px
-  color: white !important
-  padding: 16px 15px
-  min-width: 241px
-  margin-bottom: 20px
+  color: white
+  height: 45px
+  padding: 0 15px
   font-weight: 600
   cursor: pointer
-  transition: .3s ease-in-out
-  text-align: center
+  transition: .3s
+  text-decoration: none
+  &:hover
+    box-shadow: 0 3px 11px 0 rgba(60,119,220,.5)
+    text-decoration: none
+    transition: .3s
   @media only screen and (max-width: $r-768 - 1)
     font-size: 13px
-
-.container
-  display: flex
-  justify-content: center
-  vertical-align: center
-  align-items: center
-  text-align: center
-  position: relative
-  max-width: 1170px
