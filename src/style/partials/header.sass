@@ -1,6 +1,8 @@
 .header
   background: linear-gradient(90.02deg, #EBF9FD 0.01%, #EBFDF5 99.98%)
   padding: 8px 0
+  @media only screen and (max-width: $r-768 - 1)
+    padding: 0
   .container
     padding: 0
     max-width: 1145px
@@ -13,6 +15,9 @@
       flex-direction: row
       justify-content: space-between
       align-items: center
+      width: 100%
+      @media only screen and (max-width: $r-768 - 1)
+        display: none
       .logo
         background-image: url("../img/logo.svg")
         background-repeat: no-repeat
@@ -28,31 +33,32 @@
         justify-content: space-between
         align-items: center
         &-left
-          display: flex
-          flex-direction: row
-          justify-content: space-between
-          width: 100%
-          max-width: 382px
-          a
-            color: #1E4843
-            transition: .3s
-            text-decoration: none
-            &:hover
-              color: #009F10
-              text-decoration: underline
+          margin-left: 15px
+          ul
+            padding: 0
+            li
+              display: inline
+              margin-right: 42px
+              list-style: none
+              a
+                color: #1E4843
+                transition: .3s
+                text-decoration: none
+                &:hover
+                  color: #009F10
         &-right
-          display: flex
-          flex-direction: row
-          justify-content: space-between
-          width: 100%
-          max-width: 154px
-          a
-            color: #1E4843
-            transition: .3s
-            text-decoration: none
-            &:hover
-              color: #009F10
-              text-decoration: underline
+          ul
+            padding: 0
+            li
+              display: inline
+              margin-left: 42px
+              list-style: none
+              a
+                color: #1E4843
+                transition: .3s
+                text-decoration: none
+                &:hover
+                  color: #009F10
       .button
         background: linear-gradient(92.53deg,#7fe425 -8.94%,#21c11f 97.09%)
         border-radius: 41px
@@ -67,3 +73,20 @@
         &:hover
           text-decoration: underline
 
+.menu_mob
+  display: none
+  .container
+    justify-content: space-betweenы
+  .logo
+    background-image: url("../img/logo.svg")
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+    max-width: 150px
+    height: 64px
+
+  @media only screen and (max-width: $r-768 - 1)
+    display: block
+    background: white
+    width: 100%
+    padding: 10px 14px

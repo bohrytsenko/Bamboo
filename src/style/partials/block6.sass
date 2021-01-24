@@ -1,165 +1,57 @@
 .home_block6
-  display: flex
-  flex-direction: column
-  position: relative
-  .bg1
-    width: 1054px
-    height: 695px
-    top: 23%
-    right: 0
+  padding: 300px 0
+  @media only screen and (max-width: $r-768 - 1)
+    padding: 60px 15px
+  .bg
     position: absolute
+    left: 0
+    top: 0
     z-index: -1
-  .bg2
-    width: 1000px
-    height: 650px
-    bottom: 0
-    right: 0
-    position: absolute
-    z-index: -1
-    background-size: cover
-  .container
-    display: flex
-    flex-direction: column
-    padding: 0
+    @media only screen and (max-width: $r-768 - 1)
+      display: none
+    &_mob
+      display: none
+      @media only screen and (max-width: $r-768 - 1)
+        display: block
+        position: absolute
+        width: 100%
+        left: 0
+        z-index: -1
+        top: -146px
+  &-popup
+    background: white
+    max-width: 851px
+    min-height: 391px
     margin: auto
-    max-width: 1145px
-    width: 100%
-  &-title
-    font-size: 34px
-    line-height: 135.7%
-    color: #1E4843
-    font-weight: 600
-    max-width: 682px
-    align-self: center
-    span
-      color: #009F10
-  &-text
-    font-size: 18px
-    color: #1E4843
-    font-weight: 300
-    margin-top: 17px
-  .cards
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    justify-content: center
-    margin-top: 58px
-    &--item
-      flex: 25%
-      max-width: 266px
-      background: #FFFFFF
-      box-shadow: 0px 6px 25px rgba(115, 177, 168, 0.17)
-      border-radius: 10px
-      padding: 38px 22px 18px
-      background-image: url("../img/block6_card.svg")
-      background-position: bottom
-      background-repeat: no-repeat
-      min-height: 433px
-      margin: 10px
-      transition: .3s ease-in-out
-      a
-        &:hover
-          color: white
-      &:hover
-        cursor: pointer
-        background-image: url("../img/block6_card_hover.svg")
-        a
-          color: white
-      &-title
-        margin-top: 24px
-        font-size: 20px
-        line-height: 162.7%
-        color: #1E4843
-        font-weight: 600
-        margin-bottom: 12px
-      &-text
-        font-size: 17px
-        color: rgba(30, 72, 67, 0.8)
-        opacity: 80%
-        font-weight: 300
-        margin-bottom: 74px
-        min-height: 107px
-      &-button
-        font-size: 16px
-        line-height: 162.7%
-        color: #009F10
-        font-weight: 500
-
-  &_start
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    margin-top: 185px
-    width: 100%
-    margin-bottom: 212px
-    &--title
-      font-size: 34px
-      color: #1E4843
-      font-weight: 600
-    &--text
-      font-size: 18px
-      color: #1E4843
-      font-weight: 300
-    .steps
+    box-shadow: 0px 15px 30px rgba(115, 177, 168, 0.16)
+    border-radius: 8px
+    .block
       display: flex
-      flex-direction: row
-      justify-content: space-between
-      width: 100%
-      &-item
-        display: flex
-        flex-direction: column
-        max-width: 266px
-        &--image
-          position: relative
-          width: 277px
-          height: 275px
-          img
-            position: absolute
-            top: 0
-            left: 0
-          &-number
-            width: 52.54px
-            height: 52.54px
-            border: 3px solid #01B213
-            border-radius: 50%
-            display: flex
-            align-items: center
-            justify-content: center
-            top: 52px
-            position: absolute
-            left: 15px
-            background: white
-            color: #01B213
-            transition: .3s ease-in-out
-          &:hover
-            cursor: pointer
-            div
-              background: #01B213
-              color: white
-        &--text
-          color: #1E4843
-          font-size: 19px
-          font-weight: 300
-  &_get
-    align-self: start
-    display: flex
-    flex-direction: column
-    align-items: start
-    margin-bottom: 204px
-    .title
-      font-size: 37px
+      flex-direction: column
+      align-items: center
+      padding: 67px 79px 52px
+      background-image: url(../img/block5_popup_bg.svg)
+      background-repeat: no-repeat
+      background-position: -40% 75%
+      @media only screen and (max-width: $r-768 - 1)
+        padding: 50px 24px
+        background-position: 199% 115%
+    h2
+      font-size: 34px
       line-height: 135.7%
       color: #1E4843
       font-weight: 600
-      text-align: start
-      margin-bottom: 42px
-      span
-        color: #009F10
-    .desc
-      color: #57605F
-      font-size: 13px
+      margin: 0
+      @media only screen and (max-width: $r-768 - 1)
+        font-size: 28px
+    .text
+      font-size: 18px
       font-weight: 300
-
-
-
+      margin: 19px 0 37px
+      @media only screen and (max-width: $r-768 - 1)
+        font-size: 16px
+      b
+        font-size: 18px
+        font-weight: 400
+        @media only screen and (max-width: $r-768 - 1)
+          font-size: 16px

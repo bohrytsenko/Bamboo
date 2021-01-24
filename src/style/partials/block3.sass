@@ -1,47 +1,45 @@
 .home_block3
-  background-image: url("../img/block3_bg1.svg")
-  background-size: 130%
-  background-position: bottom
-  background-repeat: no-repeat
+  .left
+    position: absolute
+    left: 0
+    top: 360px
+    @media only screen and (max-width: $r-768 - 1)
+      position: absolute
+      left: -45px
+      top: 373px
+      max-width: 35%
+  .right
+    position: absolute
+    right: 0
+    top: 76px
+    @media only screen and (max-width: $r-768 - 1)
+      position: absolute
+      right: -122px
+      top: 186px
+      max-width: 122%
   .img
     margin-bottom: 420px
     display: flex
     justify-content: center
     position: relative
+    @media only screen and (max-width: $r-768 - 1)
+      margin-bottom: 30px
     a
-      top: 135px
+      top: 110px
       position: absolute
-.container
-  display: flex
-  flex-direction: column
-  justify-content: center
-  text-align: center
-  p
-    margin: 20px 0
-  h4
-    color: #1E4843
-    font-size: 18px
-    font-family: GeometriaLight
-
-.home_block4
-  background-size: 100%
-  background-position: top
-  margin-top: -200px
-  z-index: -1
-  position: relative
-  h2
-    margin-top: 300px
-    color: white
-    margin-bottom: 32px
-  h6
-    font-size: 18px
-    color: white
-    font-family: GeometriaMedium
-    line-height: 162.7%
-    margin-bottom: 37px
-  span
-    color: white
-    font-size: 30px
-    line-height: 162.7%
-    font-family: GeometriaMedium
-    margin-bottom: 90px
+      @media only screen and (max-width: $r-768 - 1)
+        top: 60px
+        .play
+          max-width: 48%
+  .container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    p
+      max-width: 700px
+      margin: 20px auto 60px
+    h4
+      color: #1E4843
+      font-size: 18px
+      font-weight: 300

@@ -4,14 +4,18 @@
     display: flex
     flex-direction: row
     margin-top: 70px
-    margin-bottom: 150px
+    margin-bottom: 160px
     justify-content: center
+    @media only screen and (max-width: $r-768 - 1)
+      flex-direction: column
+      margin-top: 0
+      margin-bottom: 0
     .item
       display: flex
       flex-direction: column
       width: 100%
       max-width: 353px
-      padding: 80px 30px 60px
+      padding: 50px 30px 50px
       align-items: center
       background-position: 500px -200%
       background-repeat: no-repeat
@@ -34,12 +38,17 @@
         color: #57605F
         font-family: 'Poppins', sans-serif
         font-weight: 300
+        @media only screen and (max-width: $r-768 - 1)
+          font-size: 15px
   .container
-    display: flex
     flex-direction: column
-    justify-content: center
-    text-align: center
+    h2
+      max-width: 615px
+      margin: auto
+    p
+      margin: 14px auto 30px
     h3
       font-family: 'Poppins', sans-serif
-
       font-weight: 400
+      max-width: 651px
+      margin: auto
