@@ -33,3 +33,10 @@ $( document ).ready(function() {
 });
 
 
+
+    var swiper = new Swiper('.swiper-reach', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });

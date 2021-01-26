@@ -24,7 +24,9 @@
       margin: 0
       outline: none
     .swiper-button-next
-      margin-right: 37px
+      margin-left: 37px
+      @media only screen and (max-width: $r-768 - 1)
+        margin-left: 0
   .row
     justify-content: space-between
     align-items: center
@@ -42,10 +44,12 @@
         text-align: left
         font-size: 30px
         margin-bottom: 25px
+        margin-top: -140px
         @media only screen and (max-width: $r-768 - 1)
           text-align: center
           font-size: 26px
           line-height: 38px
+          margin-top: 0
     .cards
       width: calc(100% - 330px)
       display: flex
