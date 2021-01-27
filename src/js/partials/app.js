@@ -40,3 +40,13 @@ $( document ).ready(function() {
             clickable: true,
         },
     });
+
+
+    var swiper = new Swiper('.swiper-compatibility', {
+        slidesPerView: 2,
+        allowTouchMove: true,
+        navigation: {
+            nextEl: '.button-next',
+            prevEl: '.button-prev',
+        },
+    });

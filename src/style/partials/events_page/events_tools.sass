@@ -1,0 +1,79 @@
+.events_tools
+  margin: 400px 0 100px
+  @media only screen and (max-width: $r-768 - 1)
+    margin: 200px 0 100px 0
+  .bg
+    position: absolute
+    width: 100%
+    top: -100px
+    z-index: -2
+    @media only screen and (max-width: $r-768 - 1)
+      display: none
+      top: 0
+    &_mob
+      display: none
+      @media only screen and (max-width: $r-768 - 1)
+        display: block
+        position: absolute
+        top: 0
+        z-index: -2
+        width: 100%
+  .container
+    .title
+      margin-bottom: 62px
+      @media only screen and (max-width: $r-768 - 1)
+        margin-bottom: 49px
+        h2
+          font-size: 26px
+    .row
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      flex-wrap: wrap
+      align-items: center
+      @media only screen and (max-width: $r-768 - 1)
+        flex-direction: column
+        justify-content: center
+        align-items: center
+      .item
+        background: white
+        box-shadow: 5px 10px 25px rgba(198, 214, 230, 0.3)
+        border-radius: 10px
+        width: 550px
+        height: 159px
+        padding: 46px 58px
+        position: relative
+        margin-bottom: 28px
+        display: flex
+        align-items: center
+        @media only screen and (max-width: $r-768 - 1)
+          max-width: 325px
+          max-height: 100px
+          margin-bottom: 13px
+          padding: 16px 50px
+          margin-left: 12px
+        .text
+          margin: 0
+          max-width: 411px
+          line-height: 162.7%
+          @media only screen and (max-width: $r-768 - 1)
+            font-size: 15px
+        .number
+          position: absolute
+          top: 30px
+          left: -20px
+          background: linear-gradient(139.55deg, #1BC92C 9.1%, #7BEA3B 94.25%)
+          color: white
+          font-family: GeometriaBold
+          font-size: 25px
+          border-radius: 50%
+          width: 52px
+          height: 52px
+          display: flex
+          align-items: center
+          justify-content: center
+          filter: drop-shadow(0px 10px 30px rgba(115, 177, 168, 0.5))
+          @media only screen and (max-width: $r-768 - 1)
+            width: 43px
+            height: 43px
+            top: 17px

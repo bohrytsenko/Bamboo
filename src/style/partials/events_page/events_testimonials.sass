@@ -1,15 +1,23 @@
-.home_block5
+.events_testimonials
   padding-top: 90px
   position: relative
   @media only screen and (max-width: $r-768 - 1)
     padding-bottom: 50px
+  h2
+    margin: 0 auto 80px
+    max-width: 820px
   .shape
     left: 0
-    bottom: -200px
+    bottom: -300px
     position: absolute
     z-index: -1
+    width: 100%
     @media only screen and (max-width: $r-768 - 1)
       bottom: -50px
+      display: none
+    &-mob
+      @media only screen and (max-width: $r-768 - 1)
+        display: block
   .arrows
     display: flex
     flex-direction: row
@@ -95,6 +103,7 @@
             margin-top: 25px
       .swiper-slide
         padding: 35px 30px 40px 30px
+        background: none
         @media only screen and (max-width: $r-768 - 1)
           padding: 0
         &:nth-of-type(odd)

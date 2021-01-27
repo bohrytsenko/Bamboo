@@ -1,0 +1,64 @@
+.events_download
+  margin-bottom: 150px
+  @media only screen and (max-width: $r-768 - 1)
+    margin-top: 100px
+  .bg
+    position: absolute
+    top: -140px
+    right: 300px
+    z-index: -1
+    @media only screen and (max-width: $r-768 - 1)
+      display: none
+    &_mob
+      display: none
+      @media only screen and (max-width: $r-768 - 1)
+        display: block
+        right: 0
+        position: absolute
+        top: 150px
+        z-index: -1
+  .container
+    .row
+      justify-content: space-between
+      flex-direction: row
+      max-width: 890px
+      margin: 0 auto
+      align-items: center
+      @media only screen and (max-width: $r-768 - 1)
+        flex-direction: column
+      .text
+        max-width: 390px
+        h2
+          text-align: left
+          line-height: 135.7%
+          font-size: 34px
+          margin-bottom: 20px
+          @media only screen and (max-width: $r-768 - 1)
+            text-align: center
+            margin-bottom: 17px
+        p
+          line-height: 172.7%
+          text-align: left
+          font-size: 16px
+          @media only screen and (max-width: $r-768 - 1)
+            text-align: center
+      .button
+        background: linear-gradient(90deg, #7FE425 0%, #21C11F 108.41%)
+        box-shadow: 5px 10px 35px #C6D6E6
+        border-radius: 10px
+        width: 406px
+        height: 114px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding: 38px
+        @media only screen and (max-width: $r-768 - 1)
+          padding: 35px 28px
+          max-width: 328px
+        .text
+          color: white
+          font-size: 22px
+          font-family: GeometriaBold
+          @media only screen and (max-width: $r-768 - 1)
+            font-size: 19px
