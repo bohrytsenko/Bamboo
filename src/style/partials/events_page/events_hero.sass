@@ -1,38 +1,76 @@
 .events_hero
   position: relative
+  padding-bottom: 300px
+  @media only screen and (max-width: $r-1200 - 1)
+    min-height: 689px
+    padding-bottom: 0
   @media only screen and (max-width: $r-768 - 1)
-    min-height: 576px
-    margin-bottom: 100px
+    margin-bottom: 10px
   .container
     .title
       max-width: 400px
       margin-bottom: 20px
       padding-top: 100px
-      @media only screen and (max-width: $r-768 - 1)
+      @media only screen and (max-width: $r-1200 - 1)
         padding-top: 75px
-        margin-top: 0
+        margin: 0 auto 20px
       h1
         font-size: 46px
         line-height: 130%
-        @media only screen and (max-width: $r-768 - 1)
+        @media only screen and (max-width: $r-1200 - 1)
           font-size: 34px
           text-align: center
+          margin: 0 auto
         b
           color: #20B7D9
     .text
       max-width: 369px
       line-height: 162.7%
-      margin-bottom: 300px
+      @media only screen and (max-width: $r-1200 - 1)
+        margin: 0 auto
       p
-        @media only screen and (max-width: $r-768 - 1)
+        font-family: GeometriaRegular
+        @media only screen and (max-width: $r-1200 - 1)
           font-size: 16px
           text-align: center
 
+  .bg
+    position: absolute
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    object-fit: cover
+    object-position: bottom
+    @media only screen and (max-width: $r-768 - 1)
+      display: none
+    &_mob
+      display: none
+      @media only screen and (max-width: $r-768 - 1)
+        display: block
+        position: absolute
+        z-index: -1
+        width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: bottom
+        top: 0
+        left: 0
   .bg_img
     position: absolute
     right: 0
-    @media only screen and (min-width: $r-768 - 1)
+    @media only screen and (min-width: $r-1200 - 1)
       top: 0
+    @media only screen and (max-width: $r-1200 - 1)
+      position: relative
+      max-width: 100%
+      padding-left: 20px
+      img
+        position: absolute
+        right: 0
+        top: -40px
+        max-height: 430px
+        max-width: 97%
     @media only screen and (max-width: $r-768 - 1)
-      bottom: 0
-      max-width: 96%
+      img
+        top: 0

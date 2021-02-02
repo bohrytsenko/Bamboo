@@ -1,33 +1,42 @@
 .events_works
   position: relative
-  @media only screen and (max-width: $r-768 - 1)
-    margin-top: 90px
+  @media only screen and (max-width: $r-1200 - 1)
+    padding-top: 90px
   .container
-
     .text
       h2
         font-size: 44px
     .row
       justify-content: space-between
       flex-direction: row
-      @media only screen and (max-width: $r-768 - 1)
+      @media only screen and (max-width: $r-1200 - 1)
         flex-direction: column
+        align-items: center
       .item
         max-width: 356px
-        @media only screen and (max-width: $r-768 - 1)
+        @media only screen and (max-width: $r-1200 - 1)
           display: flex
           flex-direction: column
           align-items: center
           justify-content: center
           margin-top: 40px
         img
-          margin-left: -20px
-        h2
+          width: 100%
+        h3
           font-size: 26px
           text-align: left
           margin-top: 10px
+          font-family: GeometriaBold
+          @media only screen and (max-width: $r-768 - 1)
+            margin-bottom: 20px
+            font-size: 20px
         p
           line-height: 170.7%
+          font-size: 17px
+          font-family: GeometriaRegular
+          @media only screen and (max-width: $r-768 - 1)
+            text-align: center
+            font-size: 15px
           b
             color: #009F10
             font-family: GeometriaBold
@@ -36,6 +45,8 @@
           margin-top: 72px
         .two
           margin-top: 357px
+          @media only screen and (max-width: $r-1200 - 1)
+            margin-top: 40px
         .three
           margin-top: 44px
   .img-center
@@ -44,11 +55,25 @@
     width: 48%
     z-index: -1
     left: 28%
+    @media only screen and (max-width: $r-768 - 1)
+      display: none
+    &_mob
+      display: none
+      position: absolute
+      @media only screen and (max-width: $r-768 - 1)
+        display: block
+        z-index: -1
+        left: 0
+        right: 0
+        width: 100%
+        top: 500px
+        max-height: 800px
+
 
   .img-right
     position: absolute
     right: 0
     top: -180px
     z-index: -1
-    @media only screen and (min-width: $r-768 - 1)
+    @media only screen and (min-width: $r-1200 - 1)
       top: -150px

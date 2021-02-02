@@ -2,12 +2,15 @@
   position: relative
   padding: 20px 0
   @media only screen and (max-width: $r-768 - 1)
-    padding-bottom: 10px
+    padding: 10px 0
   .bg
     position: absolute
     bottom: -3px
     width: 100%
     z-index: -2
+    object-fit: cover
+    object-position: top
+    height: 100%
     @media only screen and (max-width: $r-768 - 1)
       display: none
     &_mob
@@ -18,12 +21,15 @@
         bottom: -3px
         width: 100%
         z-index: -2
+        object-fit: cover
+        object-position: top
+        height: 100%
   .container
     .row
       max-width: 712px
-      margin: auto
       justify-content: space-between
       align-items: center
+      margin: 30px auto 10px
       @media only screen and (max-width: $r-768 - 1)
         flex-direction: column
         align-items: center
@@ -31,8 +37,10 @@
         color: white
         font-size: 23px
         font-family: GeometriaBold
+        margin: 0
         @media only screen and (max-width: $r-768 - 1)
           font-size: 18px
+          padding-bottom: 10px
       .text
         color: white
         font-size: 16px
@@ -42,4 +50,7 @@
           text-align: center
           font-family: GeometriaRegular
           font-size: 14px
+          line-height: 172.7%
+
+
 

@@ -1,18 +1,21 @@
 .events_compatibility
-  margin-top: 104px
+  padding-top: 104px
+  @media only screen and (max-width: $r-992 - 1)
+    padding-top: 0
   .container
+    .title
+      margin-bottom: 65px
     .row
       display: flex
       flex-direction: row
       height: 137px
       justify-content: space-around
       align-items: center
-      margin-top: 65px
       box-shadow: 5px 10px 25px rgba(198, 214, 230, 0.3)
       border-radius: 10px
       background: white
       width: 100%
-      @media only screen and (max-width: $r-768 - 1)
+      @media only screen and (max-width: $r-992 - 1)
         display: none
     .swiper-compatibility
       width: 100%
@@ -23,32 +26,37 @@
       box-shadow: 5px 10px 25px rgba(198, 214, 230, 0.3)
       border-radius: 10px
       margin-top: 30px
-      @media only screen and (max-width: $r-768 - 1)
+      @media only screen and (max-width: $r-992 - 1)
         display: flex
         align-items: center
-      .swiper-slide
-        text-align: center
-        font-size: 18px
-        width: 100%
-        display: -webkit-box
-        display: -ms-flexbox
-        display: -webkit-flex
-        display: flex
-        -webkit-box-pack: center
-        -ms-flex-pack: center
-        -webkit-justify-content: center
-        justify-content: center
-        -webkit-box-align: center
-        -ms-flex-align: center
-        -webkit-align-items: center
+      .swiper-wrapper
         align-items: center
+        .swiper-slide
+          text-align: center
+          font-size: 18px
+          width: 100%
+          display: -webkit-box
+          display: -ms-flexbox
+          display: -webkit-flex
+          display: flex
+          -webkit-box-pack: center
+          -ms-flex-pack: center
+          -webkit-justify-content: center
+          justify-content: center
+          -webkit-box-align: center
+          -ms-flex-align: center
+          -webkit-align-items: center
+          align-items: center
+          @media only screen and (max-width: $r-768 - 1)
+            img
+              max-width: 128px
     .arrows
       position: relative
       margin-top: 40px
       flex-direction: row
       justify-content: space-between
       display: none
-      @media only screen and (max-width: $r-768 - 1)
+      @media only screen and (max-width: $r-992 - 1)
         display: flex
       .button-next
         background-image: none

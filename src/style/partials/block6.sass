@@ -1,7 +1,7 @@
 .home_block6
   padding: 300px 0
-  @media only screen and (max-width: $r-992)
-    padding: 150px 0
+  //@media only screen and (max-width: $r-992)
+  //  padding: 150px 0
   @media only screen and (max-width: $r-768 - 1)
     padding: 60px 0
   .bg
@@ -20,10 +20,10 @@
         left: 0
         z-index: -1
         top: -146px
+        max-height: 863px
   &-popup
     background: white
     max-width: 851px
-    min-height: 391px
     margin: auto
     box-shadow: 0 15px 30px rgba(115, 177, 168, 0.16)
     border-radius: 8px
@@ -38,19 +38,19 @@
       background-position: -40% 75%
       @media only screen and (max-width: $r-768 - 1)
         padding: 50px 24px
-        background-position: 199% 115%
+        background-position: -100px bottom
     h2
       margin-bottom: 20px
       @media only screen and (max-width: $r-768 - 1)
         font-size: 28px
     .text
       font-size: 18px
-      font-family: GeometriaLight
       font-weight: 300
       margin-bottom: 37px
+      line-height: 172.7%
       @media only screen and (max-width: $r-768 - 1)
         font-size: 16px
-        margin-bottom: 20px
+        margin-bottom: 30px
       b
         font-size: 18px
         font-family: GeometriaMedium
@@ -61,3 +61,5 @@
       min-width: 241px
       height: 54px
       margin-bottom: 20px
+      @media only screen and (max-width: $r-768 - 1)
+        font-size: 15px

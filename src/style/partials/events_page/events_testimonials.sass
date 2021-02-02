@@ -3,21 +3,37 @@
   position: relative
   @media only screen and (max-width: $r-768 - 1)
     padding-bottom: 50px
+    padding-top: 60px
   h2
     margin: 0 auto 80px
     max-width: 820px
+    @media only screen and (max-width: $r-768 - 1)
+      font-size: 26px
   .shape
     left: 0
     bottom: -300px
     position: absolute
     z-index: -1
     width: 100%
+    object-fit: cover
+    object-position: bottom
+    height: 100%
+    @media only screen and (max-width: $r-1200 - 1)
+      bottom: -100px
+      height: 60%
     @media only screen and (max-width: $r-768 - 1)
-      bottom: -50px
       display: none
-    &-mob
+    &_mob
+      display: none
       @media only screen and (max-width: $r-768 - 1)
         display: block
+        position: absolute
+        bottom: 0
+        z-index: -1
+        width: 100%
+        height: 50%
+        object-fit: cover
+        object-position: bottom
   .arrows
     display: flex
     flex-direction: row
@@ -55,7 +71,7 @@
         margin-top: -140px
         @media only screen and (max-width: $r-768 - 1)
           text-align: center
-          font-size: 26px
+          font-size: 20px
           line-height: 38px
           margin-top: 0
     .cards
@@ -86,7 +102,7 @@
       &:after
         right: -30px
         bottom: 30px
-        background-image: url("../img/block5-quote2.svg")
+        background-image: url("../img/block5_tags.svg")
         @media only screen and (max-width: $r-992)
           right: 0
           bottom: 0
@@ -132,6 +148,7 @@
           text-align: left
           color: #57605F
           line-height: 162.7%
+          font-family: GeometriaRegular
           @media only screen and (max-width: $r-768 - 1)
             font-size: 17px
         .author

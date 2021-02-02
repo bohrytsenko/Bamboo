@@ -1,12 +1,15 @@
 .events_tools
-  margin: 400px 0 100px
+  padding: 400px 0 100px
   @media only screen and (max-width: $r-768 - 1)
-    margin: 200px 0 100px 0
+    padding: 50px 0 100px 0
   .bg
     position: absolute
     width: 100%
     top: -100px
     z-index: -2
+    height: 100%
+    object-fit: cover
+    object-position: bottom
     @media only screen and (max-width: $r-768 - 1)
       display: none
       top: 0
@@ -15,14 +18,19 @@
       @media only screen and (max-width: $r-768 - 1)
         display: block
         position: absolute
-        top: 0
+        top: -100px
         z-index: -2
         width: 100%
+        min-height: 1160px
+        object-fit: cover
+        object-position: bottom
+        height: 100%
   .container
     .title
-      margin-bottom: 62px
+      margin: 0 auto 62px
+      max-width: 842px
       @media only screen and (max-width: $r-768 - 1)
-        margin-bottom: 49px
+        margin: 0 auto 49px
         h2
           font-size: 26px
     .row
@@ -31,7 +39,7 @@
       justify-content: space-between
       flex-wrap: wrap
       align-items: center
-      @media only screen and (max-width: $r-768 - 1)
+      @media only screen and (max-width: $r-1200 - 1)
         flex-direction: column
         justify-content: center
         align-items: center
@@ -50,12 +58,14 @@
           max-width: 325px
           max-height: 100px
           margin-bottom: 13px
-          padding: 16px 50px
+          padding: 16px 20px 16px 50px
           margin-left: 12px
         .text
           margin: 0
           max-width: 411px
           line-height: 162.7%
+          font-family: GeometriaRegular
+          font-size: 23px
           @media only screen and (max-width: $r-768 - 1)
             font-size: 15px
         .number
@@ -72,7 +82,7 @@
           display: flex
           align-items: center
           justify-content: center
-          filter: drop-shadow(0px 10px 30px rgba(115, 177, 168, 0.5))
+          box-shadow: 5px 10px 25px rgba(198,214,230,.8)
           @media only screen and (max-width: $r-768 - 1)
             width: 43px
             height: 43px
