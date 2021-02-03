@@ -30,6 +30,8 @@
         font-size: 14px
   .container
     padding: 0
+    &::-webkit-scrollbar
+      display: none
     @media only screen and (max-width: $r-1200 - 1)
       overflow-x: scroll
     .head
@@ -64,6 +66,10 @@
       min-width: 1200px
       @media only screen and (max-width: $r-768 - 1)
         min-width: 814px
+      &.more
+        .item
+          &:nth-child(n+6)
+            display: flex
       .item
         display: flex
         flex-direction: row
@@ -72,6 +78,8 @@
         color: #1E4843
         &:nth-child(2n)
           background: white
+        &:nth-child(n+6)
+          display: none
         .title
           width: 100%
           max-width: 220px
