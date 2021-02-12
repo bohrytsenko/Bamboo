@@ -51,23 +51,133 @@
 <!--end header-->
 
 <!--begin header-->
-<section class="events_table">
+<section class="faq_page">
     <h1></h1>
-    <div class="container">
-        <div class="row title">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+    <p></p>
+    <div class="row">
+        <h3></h3>
+        <div class="item">
+            <div class="title"></div>
+            <div class="text"></div>
+            <div class="button"></div>
         </div>
-        <div class="row table">
+        <h3></h3>
 
+        <h3></h3>
+
+        <div class="link">
+            <p></p>
+            <a href=""></a>
         </div>
     </div>
 </section>
 <!--end header-->
+<div class="item">
+    <div class="accordion">
+        <div class="button">+</div>
+        <div class="title">{{item.question|raw}}</div>
+    </div>
+    <div class="text">{{item.text|raw}}</div>
+</div>
+
+
+
+
+<section class="about_growing">
+    <div class="container">
+        <div class="row">
+            <h2></h2>
+            <p></p>
+        </div>
+    </div>
+    <img src="" alt="">
+</section>
+
+
+<p>{{text|raw}}</p>
+
+<div class="text">{{text|raw}}</div>
+
+<section class="contacts_popups">
+    <div class="container">
+        <div class="item">
+            <div class="row">
+                <h3 class="title"></h3>
+                <div class="row">
+                    <div class="message">
+                        <h2 class="title"></h2>
+                        <div class="input">
+                            <p>FIRST NAME</p>
+                            <input type="text" placeholder="your@email.com">
+                        </div>
+                        <div class="input">
+                            <p>E-MAIL ADDRESS</p>
+                            <input type="text" placeholder="********">
+                        </div>
+                        <div class="input">
+                            <p>MESSAGE</p>
+                            <textarea type="text"></textarea>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div class="title">
+                            <h2></h2>
+                            <h3></h3>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="btn-green">Send</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="contacts_desc">
+    <div class="container">
+        <div class="text"></div>
+    </div>
+</section>
+
+
+<img src="" alt="" class="bg">
+
+
+
+
+<div class="item">
+    <div class="row">
+        <h3 class="title">{{item.title}}</h3>
+        <div class="row {{item.email_form_position|raw}}">
+            <div class="message">
+                <h2 class="text">{{item.white_form_title|raw}}</h2>
+                {{item.form|raw}}
+                <div class="input">
+                    <p>FIRST NAME</p>
+                    <input type="text" placeholder="your@email.com">
+                </div>
+                <div class="input">
+                    <p>E-MAIL ADDRESS</p>
+                    <input type="text" placeholder="********">
+                </div>
+                <div class="input">
+                    <p>MESSAGE</p>
+                    <textarea type="text"></textarea>
+                </div>
+                <div class="btn-green">Send</div>
+            </div>
+            <div class="email">
+                <div class="text">
+                    <h2>{{item.green_form_title|raw}}</h2>
+                    <h3>{{item.green_form_e_mail|raw}}</h3>
+                    <img src="{{item.image}}" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!--begin footer-->
 <footer class="footer">

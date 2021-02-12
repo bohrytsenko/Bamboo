@@ -1,0 +1,168 @@
+.contacts_forms
+  position: relative
+  z-index: 1
+  .container
+    .item
+      margin-bottom: 92px
+      .row
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        .title
+          text-transform: uppercase
+          font-size: 23px
+          letter-spacing: 0.05em
+          margin-bottom: 39px
+          @media only screen and (max-width: $r-768 - 1)
+            font-size: 20px
+            text-align: center
+        .row
+          flex-direction: row
+          @media only screen and (max-width: $r-768 - 1)
+            flex-direction: column
+            position: relative
+          .message
+            background: #FFFFFF
+            box-shadow: 10px 13px 45px rgba(115, 177, 168, 0.3)
+            border-radius: 14px
+            padding: 42px 78px 15px
+            max-width: 541px
+            min-height: 495px
+            @media only screen and (max-width: $r-768 - 1)
+              padding: 44px 16px 5px
+              margin-bottom: 140px
+            .text
+              margin-bottom: 25px
+              font-size: 28px
+              line-height: 1
+            .input
+              margin-left: 19px
+              p
+                margin-bottom: 8px
+                font-size: 11px
+                line-height: 1
+                text-transform: uppercase
+                color: #57605F
+                letter-spacing: 0.1em
+              input
+                width: 100%
+                height: 43px
+                padding: 14px 21px
+                font-family: GeometriaRegular
+                border: 1px solid rgba(110, 119, 170, 0.5)
+                box-sizing: border-box
+                border-radius: 2px
+                outline: none
+                font-size: 11px
+                line-height: 1
+                color: #666E6D
+              textarea
+                border: 1px solid rgba(110, 119, 170, 0.5)
+                box-sizing: border-box
+                border-radius: 2px
+                min-height: 99px
+                width: 100%
+                resize: none
+                outline: none
+                font-size: 11px
+                padding: 14px 21px
+                line-height: 1
+            .wpcf7-submit
+              min-width: 204px
+              margin: auto
+              min-height: 54px
+              line-height: 1
+              display: flex
+              align-items: center
+              justify-content: center
+              background: linear-gradient(92.53deg, #7FE425 -8.94%, #21C11F 97.09%)
+              border-radius: 41px
+              color: white
+              height: 45px
+              padding: 0 15px
+              font-family: GeometriaBold
+              font-weight: 600
+              cursor: pointer
+              transition: .3s
+              text-decoration: none
+              line-height: 1
+              font-size: 17px
+              border: none
+              margin-top: 29px
+              &:hover
+                box-shadow: 0 3px 11px 0 rgba(60,119,220,.5)
+                text-decoration: none
+                transition: .3s
+              @media only screen and (max-width: $r-768 - 1)
+                font-size: 13px
+          .email
+            max-width: 403px
+            min-height: 415px
+            padding: 46px 60px 0 52px
+            background: linear-gradient(90.2deg, #01B213 8.22%, #91ED58 127.91%)
+            box-shadow: 5px 10px 45px rgba(115, 177, 168, 0.4)
+            border-bottom-right-radius: 14px
+            border-top-right-radius: 14px
+            @media only screen and (max-width: $r-768 - 1)
+              position: absolute
+              bottom: 0
+              z-index: -1
+              min-width: 109%
+              border-radius: 14px
+              padding-top: 160px
+              min-height: 0
+            .text
+              @media only screen and (max-width: $r-768 - 1)
+                position: relative
+                z-index: 3
+              h2
+                font-size: 27px
+                line-height: 1
+                color: white
+                margin-bottom: 15px
+                text-align: left
+                @media only screen and (max-width: $r-768 - 1)
+                  text-align: center
+              h3
+                font-size: 20px
+                color: white
+                font-family: GeometriaRegular
+                margin-bottom: 46px
+                @media only screen and (max-width: $r-768 - 1)
+                  text-align: center
+                  margin-bottom: 31px
+              img
+                @media only screen and (max-width: $r-768 - 1)
+                  display: none
+        .left
+          display: flex
+          flex-direction: row-reverse
+          @media only screen and (max-width: $r-768 - 1)
+            flex-direction: column
+            position: relative
+          .email
+            max-width: 403px
+            min-height: 415px
+            padding: 46px 60px 0 52px
+            background: linear-gradient(90.2deg, #01B213 8.22%, #91ED58 127.91%)
+            box-shadow: 5px 10px 45px rgba(115, 177, 168, 0.4)
+            border-bottom-left-radius: 14px
+            border-top-left-radius: 14px
+            border-bottom-right-radius: 0
+            border-top-right-radius: 0
+            @media only screen and (max-width: $r-768 - 1)
+              position: absolute
+              bottom: 0
+              z-index: -1
+              min-width: 109%
+              border-radius: 14px
+              padding-top: 160px
+              min-height: 0
+  .bg
+    position: absolute
+    width: 100%
+    z-index: -1
+    top: -90px
+    left: 0
+    @media only screen and (max-width: $r-768 - 1)
+      display: none

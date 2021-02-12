@@ -1,33 +1,20 @@
-.events_table
+.pricing_table
   width: 100%
-  max-width: 1200px
   margin: auto
-  padding: 180px 0 20px
+  padding: 20px 0 120px
   @media only screen and (max-width: $r-768 - 1)
     max-width: 814px
-    padding: 103px 0 80px
+    padding: 51px 0 67px
   h2
-    margin-bottom: 80px
+    margin-bottom: 63px
+    font-size: 52px
     @media only screen and (max-width: $r-768 - 1)
-      margin-bottom: 50px
+      margin-bottom: 19px
+      font-size: 36px
   a
     max-width: 216px
-    margin: 0 auto 15px
     @media only screen and (max-width: $r-768 - 1)
       font-size: 16px
-  .btn-desc
-    margin: auto
-    max-width: 383px
-    text-align: center
-    a
-      font-size: 18px
-      text-decoration: underline
-      color: #1E4843
-      text-align: center
-      font-family: GeometriaRegular
-      @media only screen and (max-width: $r-768 - 1)
-        text-align: center
-        font-size: 14px
   .container
     padding: 0
     position: relative
@@ -38,95 +25,132 @@
     .head
       display: flex
       flex-direction: row
-      padding-left: 220px
       min-width: 1200px
-
+      justify-content: flex-end
       @media only screen and (max-width: $r-768 - 1)
-        padding-left: 133px
-        min-width: 814px
+        min-width: 872px
+        padding-top: 17px
       .arrow
         display: none
         object-fit: contain
         object-position: center
         position: absolute
-        left: 85px
-        top: 23px
+        left: 55px
+        top: 40px
         @media only screen and (max-width: $r-768 - 1)
           display: block
       .item
         width: 100%
-        max-width: 329px
+        max-width: 321px
         text-align: center
-        padding: 22px 0
+        padding: 28px 0 25px
         display: flex
         justify-content: center
         align-items: center
-        background: linear-gradient(90deg, #B6FCEC 0%, #ABEAF0 100%)
-        border-top-left-radius: 8px
-        border-top-right-radius: 8px
         font-family: GeometriaBold
-        color: #1E4843
+        color: white
+        font-size: 27px
+        background: url('../img/pricing_bg_blue.svg')
+        background-repeat: no-repeat
+        background-size: cover
         @media only screen and (max-width: $r-768 - 1)
-          max-width: 227px
-          font-size: 18px
+          max-width: 256px
+          font-size: 22px
+          padding: 18px 0 16px
       .green
-        background: linear-gradient(266.93deg, #68E15D 0%, #A2F175 83.17%)
+        background: url('../img/pricing_bg_green.svg')
+        background-repeat: no-repeat
+        background-size: cover
+        position: relative
+        .best
+          position: absolute
+          background: linear-gradient(271.69deg, #F6CF42 -3.96%, #F3E205 104.32%)
+          color: white
+          top: -15px
+          width: 123px
+          height: 29px
+          font-size: 12px
+          border-radius: 6px
+          padding: 8px 0
+
     .table
       display: flex
       flex-direction: column
       min-width: 1200px
+      box-shadow: 0 4px 36px rgba(115, 177, 168, 0.28)
+      border-top-left-radius: 16px
       @media only screen and (max-width: $r-768 - 1)
-        min-width: 814px
-      &.more
-        .item
-          &:nth-child(n+6)
-            display: flex
+        min-width: 872px
+
       .item
         display: flex
         flex-direction: row
         width: 100%
         background: #F4FBFC
         color: #1E4843
+        min-height: 140px
+        @media only screen and (max-width: $r-768 - 1)
+          min-height: 110px
         &:nth-child(2n)
           background: white
-        &:nth-child(n+6)
-          display: none
+        &:first-child
+          border-top-left-radius: 16px
         .title
           width: 100%
           max-width: 220px
-          padding: 20px 40px
+          padding: 20px 0 20px 52px
           color: #1E4843
           font-family: GeometriaBold
           display: flex
           align-items: center
           @media only screen and (max-width: $r-768 - 1)
-            max-width: 133px
+            max-width: 104px
             padding: 20px
+            font-size: 13px
         .cell
           width: 100%
-          max-width: 330px
-          min-width: 329px
-          padding: 20px 40px
+          max-width: 321px
+          min-width: 320px
+          padding: 20px 14px 20px 40px
           color: #1E4843
           font-family: GeometriaRegular
           line-height: 140.7%
           font-size: 15px
           display: flex
           align-items: center
+          p
+            font-size: 14px
+            margin-bottom: 0
+            @media only screen and (max-width: $r-768 - 1)
+              font-size: 13px
+            strong
+              font-family: GeometriaMedium
+              font-size: 18px
+              @media only screen and (max-width: $r-768 - 1)
+                font-size: 16px
+          b
+            font-family: GeometriaRegular
+            font-size: 19px
+            @media only screen and (max-width: $r-768 - 1)
+              font-size: 17px
           @media only screen and (max-width: $r-768 - 1)
-            max-width: 227px
+            max-width: 256px
             padding: 20px
             min-width: 0
+            font-size: 13px
     .price
       margin-bottom: 32px
       min-width: 1200px
+      min-height: 115px
+      box-shadow: 0 4px 36px rgba(115, 177, 168, 0.28)
       @media only screen and (max-width: $r-768 - 1)
-        min-width: 814px
+        min-width: 872px
+        min-height: 93px
       .item
         display: flex
         flex-direction: row
         width: 100%
-        background: linear-gradient(269.82deg, #68E15C -1.36%, #A2F175 100%)
+        background: #EFFCF9
         border-bottom-left-radius: 8px
         border-bottom-right-radius: 8px
         .title
@@ -139,20 +163,30 @@
           align-items: center
           font-size: 23px
           @media only screen and (max-width: $r-768 - 1)
-            max-width: 133px
+            max-width: 104px
             padding: 20px
-            font-size: 18px
+            font-size: 13px
+
         .cell
           width: 100%
-          max-width: 330px
-          min-width: 329px
+          max-width: 321px
+          min-width: 320px
           padding: 20px 40px
           color: #1E4843
           font-family: GeometriaMedium
           display: flex
           align-items: center
           font-size: 16px
+
           @media only screen and (max-width: $r-768 - 1)
-            min-width: 227px
+            min-width: 256px
             padding: 20px
-            font-size: 15px
+            font-size: 13px
+          .btn-green
+            min-width: 200px
+            @media only screen and (max-width: $r-768 - 1)
+              min-width: 188px
+          .btn-blue
+            min-width: 200px
+            @media only screen and (max-width: $r-768 - 1)
+              min-width: 188px
